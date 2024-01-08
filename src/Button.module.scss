@@ -1,0 +1,13 @@
+.button{
+  outline: none;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: blue;
+  transition: 0.5s;
+  &:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+  }
+}
