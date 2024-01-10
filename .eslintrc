@@ -5,6 +5,7 @@
       "es2021": true
   },
   "rules": {
+      "max-len":["error", 150 ,{"ignoreUrls": true}],
       "semi": ["error", "always"],
       "quotes": ["error", "single"],
       "linebreak-style": ["error", "windows"],
@@ -12,7 +13,6 @@
       "class-methods-use-this": "off",
       "@typescript-eslint/class-methods-use-this": "off",
       "eol-last": 0,
-      "max-len": [{"ignoreUrls": true}],
       "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
       "lines-between-class-members": [
         "error",
