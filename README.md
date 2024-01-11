@@ -1,1 +1,1 @@
-webpack + eslint
+webpack + eslint + pretter
