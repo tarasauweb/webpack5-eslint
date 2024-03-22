@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: path.resolve(__dirname, "./src/index.ts"),
   output: {
@@ -21,6 +22,14 @@ module.exports = {
     port: 9000,
   },
   plugins: [
+    new CopyPlugin({
+      patterns: [
+        {
+          from: './src/img',
+          to: './img'
+        }
+      ],
+    }),
     new HtmlWebpackPlugin({
       title: "My App",
       filename: "index.html",
